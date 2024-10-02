@@ -1,8 +1,9 @@
 package data
 
-type student_info struct {
-	ID         uint   `gorm:"primaryKey"`
-	Name       string `gorm:"size:100;not null"`
-	Age        string `gorm:"size:100"`
-	university string `gorm:"size:100"`
+type Student_info struct {
+	ID         uint    `gorm:"primaryKey;autoIncrement" json:"id"`
+	Name       string  `gorm:"size:100;not null"`
+	Age        string  `gorm:"size:100"`
+	University string  `gorm:"size:100"`
+	CGPA       float64 `gorm:"size:100"`
 }
