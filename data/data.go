@@ -6,4 +6,5 @@ type Student_info struct {
 	Age        string  `gorm:"size:100"`
 	University string  `gorm:"size:100"`
 	CGPA       float64 `gorm:"size:100"`
+	Gender     string  `gorm:"size:100"`
 }

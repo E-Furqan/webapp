@@ -15,4 +15,6 @@ func main() {
 	server.PATCH("/updateinfo/:id", controllers.Update_info)
 
 	server.Run(":8081")
+	server.Use(gin.Recovery())
+
 }
